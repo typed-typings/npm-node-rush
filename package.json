@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p . && typings bundle -o test/bundle.d.ts",
+    "test": "tsc -p test"
   },
   "author": "",
   "license": "ISC",

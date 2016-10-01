@@ -1,13 +1,9 @@
 {
   "compilerOptions": {
-    "noImplicitAny": true,
     "module": "commonjs",
     "moduleResolution": "node"
   },
-  "exclude": [
-    "node_modules",
-    "test"
-  ],
+  "exclude": [],
   "formatCodeOptions": {
     "indentSize": 2,
     "tabSize": 2,
