@@ -21,6 +21,8 @@ declare module rush {
     private locks: any;
     private _timeouts: any;
 
+    constructor(options?: rush.Options);
+
     /** Fetch an item by its `key` from the cache. If it doesn't exist, call `fetch` to retrieve it. The results of `fetch` are cached under `key`. If the results include an `err`, the ttl of `key` is decided by the `errTTL` option. */
     get<T>(key: string, fetch: (cb: Callback<T>) => void, cb: Callback<T>): void;
     del(key: string): void;
@@ -34,6 +36,6 @@ declare module rush {
 }
 
 /** Create a new cache */
-declare function rush(options: rush.Options): rush.Rush;
+declare function rush(options?: rush.Options): rush.Rush;
 
 export = rush;
