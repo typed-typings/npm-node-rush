@@ -1,0 +1,7 @@
+{
+  "name": "node-rush",
+  "main": "lib/rush.d.ts",
+  "version": "0.10.0",
+  "dependencies": {
+  }
+}
